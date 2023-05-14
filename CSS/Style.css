@@ -61,6 +61,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
 }
 #navbar {
   display: flex;
@@ -80,6 +81,8 @@ body {
   transition: 0.3s ease;
 }
 #navbar li:hover,
+=======
+#navbar li a:hover,
 #navbar li a.active {
   color: #088178;
 }
@@ -93,7 +96,6 @@ body {
   bottom: -4px;
   left: 20px;
 }
-
 /*_______Home Page Styling_________*/
 #hero {
   background-image: url("BG/hero.jpg");
