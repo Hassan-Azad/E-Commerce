@@ -48,6 +48,9 @@ body {
 /* 2) __________Styling Header__________ */
 
 .logo{
+<<<<<<< HEAD
+    width: 7%;
+=======
     width: auto;
     height: 40px;
     float: left;
@@ -116,6 +119,7 @@ body {
     margin-left: 1rem;
 .logo {
   width: 7%;
+>>>>>>> friend/main
 }
 #header {
   display: flex;
@@ -159,6 +163,9 @@ body {
   position: absolute;
   bottom: -4px;
   left: 20px;
+<<<<<<< HEAD
+}
+=======
 }
 /*3)_______Home Page Styling_________*/
 #hero {
@@ -301,3 +308,4 @@ body {
   padding-top: 20px;
   flex-wrap: wrap;
 }
+>>>>>>> friend/main
