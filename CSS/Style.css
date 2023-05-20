@@ -428,3 +428,34 @@ background-size: cover;
 #bannerSection3 #textBanner3{
   background-image: url("/Images/banner/b18.jpg") ;
 }
+/* Footer design code  */
+.col img{
+  width: 11rem;
+  height: 4vh;
+}
+#footer .col{
+  width: 25%;
+  /* border: 1px solid red; */
+}
+#footer{
+  display: flex;
+  background-color: #088178;
+  padding: 3rem 5rem;
+  margin-bottom: 0px;
+  
+}
+.col a{
+  display: flex;
+  flex-direction: column;
+}
+#footerAbout h4 ,a{
+text-align: center;
+padding: 0.4rem 0rem 
+;
+}
+.footerIcon i{
+  width: 2rem;
+  height: 4vh;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
