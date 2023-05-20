@@ -356,7 +356,6 @@ background-size: cover;
   justify-content: center;
   align-items: flex-start;
   padding-left: 2rem;
-
   background-image: url("/Images/banner/b17.jpg") ;
 background-position: center;
 background-size: cover;
@@ -393,4 +392,39 @@ border: 1px solid #088178;
 }
 #bannerBox2{
   background-image: url("/Images/banner/b10.jpg");
+}
+/* text banner section is start from here */
+#bannerSection3{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#bannerSection3 div h4{
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+#bannerSection3 div p{
+  color: #ef3636;;
+  font-weight: 800;
+  font-size: 15px;
+}
+#bannerSection3 div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 20px;
+  background-image: url("/Images/banner/b7.jpg") ;
+background-position: center;
+background-size: cover;
+  min-width: 30%;
+  height: 30vh;
+}
+#bannerSection3 #textBanner2{
+  background-image: url("/Images/banner/b4.jpg") ;
+}
+#bannerSection3 #textBanner3{
+  background-image: url("/Images/banner/b18.jpg") ;
 }
