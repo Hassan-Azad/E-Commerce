@@ -55,6 +55,18 @@ body {
   width: 100%;
 }
 
+.button_White{
+  font-size: 13px;
+  color: rgb(253, 253, 253);
+  background-color: transparent;
+  font-weight: 600;
+  padding:11px 18px ;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid lightgray;
+  transition: 0.2s;
+}
 /* 2) __________Styling Header__________ */
 
 .logo {
@@ -335,4 +347,50 @@ background-size: cover;
 }
 #bannar_Shotout span{
   color: #ef3636;
+}
+
+/* call to action button is design start */
+.bannerBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2rem;
+
+  background-image: url("/Images/banner/b17.jpg") ;
+background-position: center;
+background-size: cover;
+  min-width: 580px;
+  height: 50vh;
+}
+#call_to_action_section{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: nowrap;
+}
+.bannerBox h4{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+
+
+}
+.bannerBox h2{
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+
+}
+.bannerBox span{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px ;
+}
+.bannerBox:hover button{
+background-color: #088178;
+border: 1px solid #088178;
+}
+#bannerBox2{
+  background-image: url("/Images/banner/b10.jpg");
 }
