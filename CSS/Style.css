@@ -40,11 +40,11 @@ p {
 .section-m1 {
   margin: 40px 0;
 }
-.button_Normal{
+.button_Normal {
   color: rgb(12, 10, 10);
   background-color: #ffffff;
   font-weight: 600;
-  padding:15px 30px ;
+  padding: 15px 30px;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
@@ -55,12 +55,12 @@ body {
   width: 100%;
 }
 
-.button_White{
+.button_White {
   font-size: 13px;
   color: rgb(253, 253, 253);
   background-color: transparent;
   font-weight: 600;
-  padding:11px 18px ;
+  padding: 11px 18px;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
@@ -323,139 +323,158 @@ body {
   flex-wrap: wrap;
 }
 /* banner_shortout section is start here */
-#bannar_Shotout{
+#bannar_Shotout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/Images/banner/b2.jpg") ;
-background-position: center;
-background-size: cover;
+  background-image: url("/Images/banner/b2.jpg");
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 40vh;
-
 }
-#bannar_Shotout h4{
+#bannar_Shotout h4 {
   color: #ffff;
   font-size: 16px;
 }
-#bannar_Shotout h2{
+#bannar_Shotout h2 {
   color: white;
   font-size: 38px;
-  padding: 10px 0px ;
+  padding: 10px 0px;
 }
-#bannar_Shotout span{
+#bannar_Shotout span {
   color: #ef3636;
 }
 
 /* call to action button is design start */
-.bannerBox{
+.bannerBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding-left: 2rem;
-  background-image: url("/Images/banner/b17.jpg") ;
-background-position: center;
-background-size: cover;
+  background-image: url("/Images/banner/b17.jpg");
+  background-position: center;
+  background-size: cover;
   min-width: 580px;
   height: 50vh;
 }
-#call_to_action_section{
+#call_to_action_section {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-wrap: nowrap;
 }
-.bannerBox h4{
+.bannerBox h4 {
   color: white;
   font-size: 20px;
   font-weight: 300;
-
-
 }
-.bannerBox h2{
+.bannerBox h2 {
   color: white;
   font-size: 28px;
   font-weight: 800;
-
 }
-.bannerBox span{
+.bannerBox span {
   color: white;
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 15px ;
+  padding-bottom: 15px;
 }
-.bannerBox:hover button{
-background-color: #088178;
-border: 1px solid #088178;
+.bannerBox:hover button {
+  background-color: #088178;
+  border: 1px solid #088178;
 }
-#bannerBox2{
+#bannerBox2 {
   background-image: url("/Images/banner/b10.jpg");
 }
 /* text banner section is start from here */
-#bannerSection3{
+#bannerSection3 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-#bannerSection3 div h4{
+#bannerSection3 div h4 {
   color: white;
   font-weight: 900;
   font-size: 22px;
 }
-#bannerSection3 div p{
-  color: #ef3636;;
+#bannerSection3 div p {
+  color: #ef3636;
   font-weight: 800;
   font-size: 15px;
 }
-#bannerSection3 div{
+#bannerSection3 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
   padding-bottom: 20px;
-  background-image: url("/Images/banner/b7.jpg") ;
-background-position: center;
-background-size: cover;
+  background-image: url("/Images/banner/b7.jpg");
+  background-position: center;
+  background-size: cover;
   min-width: 30%;
   height: 30vh;
 }
-#bannerSection3 #textBanner2{
-  background-image: url("/Images/banner/b4.jpg") ;
+#bannerSection3 #textBanner2 {
+  background-image: url("/Images/banner/b4.jpg");
 }
-#bannerSection3 #textBanner3{
-  background-image: url("/Images/banner/b18.jpg") ;
+#bannerSection3 #textBanner3 {
+  background-image: url("/Images/banner/b18.jpg");
 }
+
 /* Footer design code  */
-.col img{
-  width: 11rem;
-  height: 4vh;
-}
-#footer .col{
-  width: 25%;
-  /* border: 1px solid red; */
-}
-#footer{
+
+footer {
   display: flex;
-  background-color: #088178;
-  padding: 3rem 5rem;
-  margin-bottom: 0px;
-  
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.col a{
+footer .col {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
-#footerAbout h4 ,a{
-text-align: center;
-padding: 0.4rem 0rem 
-;
+footer .logo {
+  margin-bottom: 30px;
 }
-.footerIcon i{
-  width: 2rem;
-  height: 4vh;
-  margin-top: 0.5rem;
-  font-size: 1rem;
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin: 0 0 8px 0;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
 }
