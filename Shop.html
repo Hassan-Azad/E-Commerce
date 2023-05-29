@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/ShopStyle.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Images/logo.png" alt="" class="logo" /></a>
+        <div>
+          <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cart.html">
+                <i class="far fa-shopping-bag"> </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <section id="ShopHero">
+        <h4>Trade in offer</h4>
+        <h2>#Shop Page</h2>
+      
+        <p>Save more with coupons & up to 70% off!</p>
+      
+      </section>
+
+      <!-- shop page fivided into 2 section left and right section  -->
+      <h1 id="all_product">All Products </h1>
+      <div class="shop_page_container">
+        <div class="leftBox">
+          
+          <div class="search_part">
+            <input type="text" placeholder="Search Products">
+            <button type="button" > Search</button>
+          </div>
+          
+          <div class="category_part">
+            <h3>Category </h3>
+            <div id="categoryList" class="category-list"></div>
+            <!-- <input type="checkbox" id="Men">
+            <label for="Men">Mens</label><br/>
+            <input type="checkbox" id="Women">
+            <label for="Women">Women</label><br/>
+            <input type="checkbox" id="Watch">
+            <label for="Watch">Watch</label><br/>
+            <input type="checkbox" id="Mobile">
+            <label for="Mobile">Mobile</label><br/>
+            <input type="checkbox" id="Tv">
+            <label for="Tv">Tv</label><br/>
+            <input type="checkbox" id="shirt">
+            <label for="shirt">T-shirt</label><br/> -->
+          <button type="button">Apply Filter</button>
+          </div>
+
+
+          
+        </div>
+        <div class="rightBox">
+       
+          <div class="product_box">
+            <!-- <div class="col1"> 
+              <img src="/Images/products/f1.jpg" id="product_images" alt="">
+           
+              <h4 style="text-align: center;" id="product_name">Name of the Products</h4>
+             <p> <span>
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </span> </p>
+              <h4 id="prodcut_price" style="text-align: center;margin-top: 0.1rem; padding-bottom: 0.2rem;">Price :100 $</h4>
+              <button type="button">Add To Card</button>
+            </div> -->
+            <div id="productList"></div>
+         
+
+            
+          </div>
+        </div>
+    </div>
+
+<script src="FetchData.js"></script>
+</body>
+</html>
