@@ -12,3 +12,6 @@ if (close) {
     nav.classList.remove("active");
   });
 }
+
+const cart = document.getElementsByClassName("fa-shopping-cart");
+cart.addEventListener("click", () => {});
