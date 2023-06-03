@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Page</title>
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/ShopStyle.css">
+
+ 
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="Shop.css" />
 </head>
 <body>
     <section id="header">
@@ -25,16 +27,32 @@
             </li>
           </ul>
         </div>
+        <!-- cart -->
+        <div class="my-cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!-- content -->
+          <div class="cart-content"></div>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!-- Buy button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- cart close -->
+          <i id="bar" class="far fa-times close-cart"></i>
+        </div>
       </section>
-
-    <section id="ShopHero">
+  
+      <section id="ShopHero">
         <h4>Trade in offer</h4>
         <h2>#Shop Page</h2>
-      
+  
         <p>Save more with coupons & up to 70% off!</p>
       
       </section>
-
+      <h1 id="all_product">All Products</h1>
+  
       <!-- shop page fivided into 2 section left and right section  -->
       <h1 id="all_product">All Products </h1>
       <div class="shop_page_container">
@@ -65,7 +83,7 @@
 
 
           
-        </div>
+          </div>
         <div class="rightBox">
        
           <div class="product_box">
@@ -86,7 +104,7 @@
           </div>
         </div>
     </div>
-
-<script src="FetchData.js"></script>
+    <script src="shop.js"></script>
+<!-- <script src="FetchData.js"></script> -->
 </body>
 </html>

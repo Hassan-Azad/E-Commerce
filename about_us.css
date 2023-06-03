@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.about_us_content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2rem;
+    /* border: 1px solid red; */
+
+}
+.box1{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.box_content{
+    width: 50%;
+    /* margin-left: 5rem; */
+}
+.box1 img{
+    margin-top:2rem;
+    margin-left: 2rem;
+
+}
+.box_content1{
+    display: flex;
+}
+.box_content1 .col11{
+width: 10rem;
+}
+.col11 h1{
+    text-align: center;
+    color: blue;
+    font-size: 2.5rem;
+}
+.col11 p{
+    text-align: center;
+}
+
+/* OurVisionPage */
+.OurVisionPage{
+    display: flex;
+    width: 100%;
+    background-color: rgb(248, 245, 245);
+}
+.visionBoxImage {
+padding: 3rem;
+width: 50%;
+}
+.visionBox_content{
+    padding-top: 3rem;
+    width: 40%;
+}
+.visionBox_content img{
+    width: 46px;
+    height: 44px;
+    margin-right: 1rem;
+}
+.visionBox_content div{
+    display: flex;
+}
+.visionBox_content div p{
+    font-size: 20px;
+}
+/* Team design  */
+.teamBox{
+    width: 90%;
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+}
+.TeamBoxcontent{
+    width: 30%;
+    border: 1px solid rgb(212, 211, 211);
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+
+}
+.TeamBoxcontent img{
+    width: 100%;
+}
