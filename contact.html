@@ -1,125 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us </title>
-    <link rel="stylesheet" href="Contact_us.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
-        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-</head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="Shop.css" />
+    <link rel="stylesheet" href="Contact_us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
     integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-<body>
+  <body>
+    <section id="header">
+      <a href="#"><img src="Images/logo1.png" alt="" id="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search..." />
+            <button type="submit">Search</button>
+          </form>
+          <li>
+            <!-- <a href="cart.html"> -->
+            <i class="far fa-shopping-bag" id="cart-icon"> </i>
+            <!-- </a> -->
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html">
+          <i class="far fa-shopping-bag"> </i>
+        </a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <!-- cart -->
+      <div class="my-cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- content -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy button -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- cart close -->
+        <i id="bar" class="far fa-times close-cart"></i>
+      </div>
+    </section>
     <div class="contact_us_header">
-        <h1>Contact us</h1>
-        <h3> Home /Contact us </h3>
-
+      <h1>Contact us</h1>
+      <h3>Home /Contact us</h3>
     </div>
     <div class="contact_us_heading">
-        <h1 style="text-align: center;">Our Main Office</h1>
-        <div class="main_office_address">
-            <p>Store is a premium Templates theme with advanced admin module. It’s extremely customizable
-                easy to use and fully responsive and retina ready. Vel illum dolore eu feugiat nulla facilisis at vero
-                eros et accumsan et iusto odio dignissim qui blandit praesent
-                luptatum zzril delenit augue.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos earum consequuntur, impedit eum odit
-                tempore deleniti quibusdam quo provident?
-            </p>
+      <h1 style="text-align: center">Our Main Office</h1>
+      <div class="main_office_address">
+        <p>
+          Store is a premium Templates theme with advanced admin module. It’s
+          extremely customizable easy to use and fully responsive and retina
+          ready. Vel illum dolore eu feugiat nulla facilisis at vero eros et
+          accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+          delenit augue. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Optio quos earum consequuntur, impedit eum odit tempore deleniti
+          quibusdam quo provident?
+        </p>
+      </div>
+
+      <div class="company_component">
+        <div class="col1">
+          <img src="/Images/fast-delivery.png" alt="not found " />
+
+          <h3 style="text-align: center">Free Shipping</h3>
+          <p style="text-align: center">Free shipping on all pakistan order</p>
         </div>
+        <div class="col1">
+          <img src="/Images/customer-support.png" alt="not found " />
 
-        <div class="company_component">
-            <div class="col1">
-                <img src="/Images/fast-delivery.png" alt="not found ">
-
-                <h3 style="text-align: center;">Free Shipping</h3>
-                <p style="text-align: center;">Free shipping on all pakistan order</p>
-            </div>
-            <div class="col1">
-                <img src="/Images/customer-support.png" alt="not found ">
-
-                <h3 style="text-align: center;">24/7 Support</h3>
-                <p style="text-align: center;">Call us for free: +92 234 567 89</p>
-            </div>
-            <div class="col1">
-                <img src="/Images/discounts.png" alt="not found ">
-
-                <h3 style="text-align: center;">Discounts Up To 50%</h3>
-                <p style="text-align: center;">Free shipping on all pakistan order</p>
-            </div>
+          <h3 style="text-align: center">24/7 Support</h3>
+          <p style="text-align: center">Call us for free: +92 234 567 89</p>
         </div>
+        <div class="col1">
+          <img src="/Images/discounts.png" alt="not found " />
+
+          <h3 style="text-align: center">Discounts Up To 50%</h3>
+          <p style="text-align: center">Free shipping on all pakistan order</p>
+        </div>
+      </div>
     </div>
 
-
-
-
     <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13292.244036324011!2d73.34990662810155!3d33.60372147326074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skicsit!5e0!3m2!1sen!2s!4v1685733595241!5m2!1sen!2s"
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13292.244036324011!2d73.34990662810155!3d33.60372147326074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skicsit!5e0!3m2!1sen!2s!4v1685733595241!5m2!1sen!2s"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
     <div class="contact_form">
-        <h1>Get In Touch With Us</h1>
+      <h1>Get In Touch With Us</h1>
 
-        <div class="container">
-            <form id="contactForm" onsubmit="submitForm(event)">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </div>
-
+      <div class="container">
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        (function () {
-            emailjs.init('FjbcBqAs2FYs2-pat');
-        })();
-
-
+      (function () {
+        emailjs.init("FjbcBqAs2FYs2-pat");
+      })();
     </script>
     <script>
-        function submitForm(event) {
-            event.preventDefault();
+      function submitForm(event) {
+        event.preventDefault();
 
-            var form = document.getElementById('contactForm');
-            var formData = new FormData(form);
+        var form = document.getElementById("contactForm");
+        var formData = new FormData(form);
 
-            emailjs.sendForm('service_7m0u9lj', 'template_y0hk6ug', form)
-                .then(function (response) {
-                    console.log('Email sent successfully!', response.status, response.text);
-                    // Handle success response
-                }, function (error) {
-                    console.log('Email failed to send!', error);
-                    // Handle error response
-                });
-        }
-
+        emailjs.sendForm("service_7m0u9lj", "template_y0hk6ug", form).then(
+          function (response) {
+            console.log(
+              "Email sent successfully!",
+              response.status,
+              response.text
+            );
+            // Handle success response
+          },
+          function (error) {
+            console.log("Email failed to send!", error);
+            // Handle error response
+          }
+        );
+      }
     </script>
 
-
     <!-- service_f0qfm9m -->
-</body>
-
+  </body>
 </html>

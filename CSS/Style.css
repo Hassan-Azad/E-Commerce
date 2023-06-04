@@ -1,5 +1,4 @@
-/* 1) __________Default Styling_________ */
-* {
+@import "footer.css" /* 1) __________Default Styling_________ */ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -67,60 +66,6 @@ body {
   border: 1px solid lightgray;
   transition: 0.2s;
 }
-/* 2) __________Styling Header__________ */
-
-.logo {
-  width: auto;
-  height: 40px;
-  float: left;
-  margin: 0 5px 5px 0;
-}
-#header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
-  background: #e3e6f3;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#navbar li {
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-}
-#navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a;
-  transition: 0.3s ease;
-}
-#navbar li:hover,
-#navbar li a.active {
-  color: #088178;
-}
-#navbar li a.active::after,
-#navbar li a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #088178;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
-}
-#mobile {
-  display: none;
-}
-#close {
-  display: none;
-}
-
 /* -----------Hero Section design code */
 .container {
   display: flex;
@@ -145,79 +90,33 @@ body {
 .logo {
   width: 7%;
 }
-#header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
-  background: #e3e6f3;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#navbar li {
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-}
-#navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a;
-  transition: 0.3s ease;
-}
-#navbar li a:hover,
-#navbar li a.active {
-  color: #088178;
-}
-#navbar li a.active::after,
-#navbar li a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #088178;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
-}
+
 /*3)_______Home Page Styling_________*/
-#hero {
-  background-image: url("BG/hero.jpg");
-  background-repeat: no-repeat;
-  height: 90vh;
+#hero img {
   width: 100%;
-  background-position: top 55% right 0;
-  background-size: cover;
-  padding: 0 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  height: 80vh;
 }
-#hero h4 {
-  padding-bottom: 15px;
+button {
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
 }
-#hero h1 {
-  color: #088178;
+#b2 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  border: 2px solid white;
+  height: 50px;
 }
-#hero button {
-  /* background-color: transparent; */
-  border: 0;
-  padding: 14px 80px 14px 65px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 15px;
+#b1 {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  border: 2px solid white;
+  height: 50px;
 }
 
-/*4)_______Features section_________*/
+/*4)_______Features_________*/
 #feature .fe-box {
   width: 180px;
   text-align: center;
@@ -264,7 +163,147 @@ body {
   background-color: #fff2e5;
 }
 
-/*5)_______Features products_________*/
+/* 4) Featured Products */
+.shop {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* .product-category {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+} */
+.shop-content {
+  padding: 0 150px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.shop-content::-webkit-scrollbar {
+  display: none;
+}
+
+.product-box {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 460px;
+  margin-right: 40px;
+}
+
+/* .product-img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+} */
+
+.product-img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.cart {
+  position: relative;
+  bottom: 10px;
+  left: 160px;
+  background: #171427;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.cart:hover {
+  background: hsl(249, 32%, 17%);
+}
+
+/* .discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+} */
+
+/* .card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+} */
+
+/* .card-btn:hover {
+  background: #efefef;
+} */
+
+/* .product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-short-des {
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+} */
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 2vw;
+  height: 10%;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  z-index: 8;
+  border: 2px solid black;
+}
+
+.pre-btn {
+  left: 50px;
+}
+
+.nxt-btn {
+  right: 50px;
+}
+
+/*)6)_______New Arrival_________*/
 #product1 {
   text-align: center;
 }
@@ -430,60 +469,6 @@ body {
 }
 #bannerSection3 #textBanner3 {
   background-image: url("/Images/banner/b18.jpg");
-}
-
-/* Footer design code  */
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-footer .logo {
-  margin-bottom: 30px;
-}
-footer h4 {
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-footer p {
-  font-size: 13px;
-  margin: 0 0 8px 0;
-}
-footer a {
-  font-size: 13px;
-  text-decoration: none;
-  color: #222;
-  margin: 0 0 8px 0;
-}
-footer .follow {
-  margin-top: 20px;
-}
-footer .follow i {
-  color: #465b52;
-  padding-right: 4px;
-  cursor: pointer;
-}
-footer .install .row img {
-  border: 1px solid #088178;
-  border-radius: 6px;
-}
-footer .install img {
-  margin: 10px 0 15px 0;
-}
-footer .follow i:hover,
-footer a:hover {
-  color: #088178;
-}
-footer .copyright {
-  width: 100%;
-  text-align: center;
 }
 
 /* Start Media Query */

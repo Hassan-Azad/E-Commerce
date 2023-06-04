@@ -10,13 +10,26 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
+    <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="CSS/slider.css" />
+    <link rel="stylesheet" href="icart.css" />
+    <!-- <link rel="stylesheet" href="Shop.css" /> -->
     <!-- bootstrap link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
@@ -28,10 +41,14 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li id="lg-bag">
-            <a href="cart.html">
-              <i class="far fa-shopping-bag" id="shopping_cart_icon"> </i>
-            </a>
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search..." />
+            <button type="submit">Search</button>
+          </form>
+          <li>
+            <!-- <a href="cart.html"> -->
+            <i class="far fa-shopping-bag" id="cart-icon"> </i>
+            <!-- </a> -->
           </li>
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
@@ -42,17 +59,27 @@
         </a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
+      <!-- cart -->
+      <div class="my-cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- content -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy button -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- cart close -->
+        <i id="bar" class="far fa-times close-cart"></i>
+      </div>
     </section>
 
     <section id="hero">
-      <h4>Trade in offer</h4>
-      <h2>Super Value deals</h2>
-      <h1>On all Products</h1>
-      <p>Save more with coupons & up to 70% off!</p>
-
-      <a href="Shop.html">
-        <button type="button" class="btn btn-success">Shop Now</button></a
-      >
+      <img id="images" src="slider/slider_img/hero/1.jpg" alt="" />
+      <button onclick="getNextImage()" id="b1">></button>
+      <button onclick="getPreviousImage()" id="b2"><</button>
     </section>
 
     <section id="feature" class="section-p1">
@@ -82,137 +109,65 @@
       </div>
     </section>
 
-    <section id="product1" class="section-p1">
-      <h2>Featured Products</h2>
-      <p>Summer Collection New Modern Design</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="Images/products/f1.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+    <section class="shop container">
+      <button class="pre-btn"><</button>
+      <button class="nxt-btn">></button>
+      <div class="shop-content">
+        <!-- Box-1 -->
+        <div class="product-box">
+          <img src="cartImg/product1.jpg" alt="" class="product-img" />
+          <h2 class="product-title">AEROREADY SHIRT</h2>
+          <span class="price">$25</span>
+          <i class="fal fa-shopping-cart cart add-cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f2.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-2 -->
+        <div class="product-box">
+          <img src="cartImg/product2.jpg" alt="" class="product-img" />
+          <h2 class="product-title">WIRELESS EARBUDS</h2>
+          <span class="price">$125</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f3.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-3 -->
+        <div class="product-box">
+          <img src="cartImg/product3.jpg" alt="" class="product-img" />
+          <h2 class="product-title">HOODED PARKA</h2>
+          <span class="price">$35</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f4.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-4 -->
+        <div class="product-box">
+          <img src="cartImg/product4.jpg" alt="" class="product-img" />
+          <h2 class="product-title">STRAW METAL BOTTLE</h2>
+          <span class="price">$15</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f5.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-5 -->
+        <div class="product-box">
+          <img src="cartImg/product5.jpg" alt="" class="product-img" />
+          <h2 class="product-title">SILVER METAL</h2>
+          <span class="price">$225</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f6.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-6 -->
+        <div class="product-box">
+          <img src="cartImg/product6.jpg" alt="" class="product-img" />
+          <h2 class="product-title">BACK HAT</h2>
+          <span class="price">$25</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f7.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-7 -->
+        <div class="product-box">
+          <img src="cartImg/product7.jpg" alt="" class="product-img" />
+          <h2 class="product-title">BACKPACK</h2>
+          <span class="price">$45</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
-        <div class="pro">
-          <img src="Images/products/f8.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <!-- Box-8 -->
+        <div class="product-box">
+          <img src="cartImg/product8.jpg" alt="" class="product-img" />
+          <h2 class="product-title">UL TRABOOST 22</h2>
+          <span class="price">$25</span>
+          <i class="fal fa-shopping-cart cart"></i>
         </div>
       </div>
     </section>
@@ -394,61 +349,75 @@
     </section>
 
     <!-- footer section is start ftom here -->
-    <footer class="section-p1">
-      <div class="col">
-        <img src="Images/logo1.png" alt="footer logo" />
-        <h4>Contact</h4>
-        <p>
-          <strong>Address:</strong> 562 Wellington Road,Streat 32, San Fransisco
-        </p>
-        <p><strong>Phone:</strong> +01 2222 6623 /(+91) 02 77728 628 78</p>
-        <p><strong>Hours:</strong> 10:00-18:00, Mon-Sat</p>
-        <div class="follow">
-          <h4>Follow us</h4>
-          <div class="icon">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest-p"></i>
-            <i class="fab fa-youtube"></i>
-          </div>
+    <footer>
+      <div class="footer-content">
+        <img src="Images/logo1.png" class="logo" alt="" />
+        <div class="footer-ul-container">
+          <ul class="category">
+            <li class="category-title">men</li>
+            <li><a href="#" class="footer-link">t-shirts</a></li>
+            <li><a href="#" class="footer-link">sweatshirts</a></li>
+            <li><a href="#" class="footer-link">shirts</a></li>
+            <li><a href="#" class="footer-link">jeans</a></li>
+            <li><a href="#" class="footer-link">trousers</a></li>
+            <li><a href="#" class="footer-link">shoes</a></li>
+            <li><a href="#" class="footer-link">casuals</a></li>
+            <li><a href="#" class="footer-link">formals</a></li>
+            <li><a href="#" class="footer-link">sports</a></li>
+            <li><a href="#" class="footer-link">watch</a></li>
+          </ul>
+          <ul class="category">
+            <li class="category-title">women</li>
+            <li><a href="#" class="footer-link">t-shirts</a></li>
+            <li><a href="#" class="footer-link">sweatshirts</a></li>
+            <li><a href="#" class="footer-link">shirts</a></li>
+            <li><a href="#" class="footer-link">jeans</a></li>
+            <li><a href="#" class="footer-link">trousers</a></li>
+            <li><a href="#" class="footer-link">shoes</a></li>
+            <li><a href="#" class="footer-link">casuals</a></li>
+            <li><a href="#" class="footer-link">formals</a></li>
+            <li><a href="#" class="footer-link">sports</a></li>
+            <li><a href="#" class="footer-link">watch</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col">
-        <h4>About</h4>
-        <a href="#">About us</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Condition</a>
-        <a href="#">Contact us</a>
-      </div>
-
-      <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track my Order</a>
-        <a href="#">Help</a>
-      </div>
-
-      <div class="col install">
-        <h4>Install app</h4>
-        <p>From App Store or Google Play</p>
-        <div class="row">
-          <img src="Images/pay/app.jpg" alt="" />
-          <img src="Images/pay/play.jpg" alt="" />
+      <!-- // previous elements -->
+      <p class="footer-title">about company</p>
+      <p class="info">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+        tempore ad suscipit, eos eius quisquam sed optio nisi quaerat fugiat
+        ratione et vero maxime praesentium, architecto minima reiciendis iste
+        quo deserunt assumenda alias ducimus. Ullam odit maxime id voluptates
+        rerum tenetur corporis laboriosam! Cum error ipsum laborum tempore in
+        rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo
+        aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo
+        culpa reprehenderit excepturi distinctio tempore cupiditate praesentium
+        nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab
+        debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt
+        quasi placeat omnis, itaque harum?
+      </p>
+      <p class="info">
+        support emails - help@clothing.com, customersupport@clothing.com
+      </p>
+      <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+      <div class="footer-social-container">
+        <div>
+          <a href="#" class="social-link">terms & services</a>
+          <a href="#" class="social-link">privacy page</a>
         </div>
-        <p>Secured Payment Gateways</p>
-        <img src="Images/pay/pay.png" alt="" />
+        <div>
+          <a href="#" class="social-link">instagram</a>
+          <a href="#" class="social-link">facebook</a>
+          <a href="#" class="social-link">twitter</a>
+        </div>
       </div>
-      <div class="copyright">
-        <p>&copy 2023, Ecommerece - HTML CSS JavaScript</p>
-      </div>
+      <p class="footer-credit">Clothing, Best apparels online store</p>
     </footer>
-
     <script src="script.js"></script>
     <script src="addtocart.js"></script>
+    <script src="slider/slider.js"></script>
+    <script src="ishop.js"></script>
+    <script src="shop.js"></script>
     <!-- bootstap link js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
