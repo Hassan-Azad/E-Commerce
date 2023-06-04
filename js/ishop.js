@@ -93,6 +93,8 @@ function addCartClicked(event) {
   addProductToCart(title, price, productImg);
   updatetotal();
   updateCartData(); // Update cart data in sessionStorage
+  cartCount++;
+  document.getElementById("cart-count").textContent = cartCount;
 }
 
 function addProductToCart(title, price, productImg) {
@@ -107,15 +109,15 @@ function addProductToCart(title, price, productImg) {
     }
   }
   var cartBoxContent = `
-                       <img src="${productImg}" alt="" class="cart-img" />
-                       <div class="detail-box">
-                       <div class="cart-product-title">${title}</div>
-                       <div class="cart-price">${price}</div>
-                       <input type="number" value="1" class="cart-quantity" />
-                       </div>
-                       <!-- remove cart -->
-                       <i class="fa fa-trash-o cart-remove" style="font-size: 24px"></i>
-                       `;
+                     <img src="${productImg}" alt="" class="cart-img" />
+                     <div class="detail-box">
+                     <div class="cart-product-title">${title}</div>
+                     <div class="cart-price">${price}</div>
+                     <input type="number" value="1" class="cart-quantity" />
+                     </div>
+                     <!-- remove cart -->
+                     <i class="fa fa-trash-o cart-remove" style="font-size: 24px"></i>
+                     `;
   cartShopBox.innerHTML = cartBoxContent;
   cartItems.append(cartShopBox);
   cartShopBox
@@ -153,15 +155,15 @@ function displayCart() {
     cartShopBox.classList.add("cart-box");
 
     var cartBoxContent = `
-        <img src="${item.productImg}" alt="" class="cart-img" />
-        <div class="detail-box">
-          <div class="cart-product-title">${item.title}</div>
-          <div class="cart-price">${item.price}</div>
-          <input type="number" value="${item.quantity}" class="cart-quantity" />
-        </div>
-        <!-- remove cart -->
-        <i class="fa fa-trash-o cart-remove" style="font-size: 24px"></i>
-      `;
+      <img src="${item.productImg}" alt="" class="cart-img" />
+      <div class="detail-box">
+        <div class="cart-product-title">${item.title}</div>
+        <div class="cart-price">${item.price}</div>
+        <input type="number" value="${item.quantity}" class="cart-quantity" />
+      </div>
+      <!-- remove cart -->
+      <i class="fa fa-trash-o cart-remove" style="font-size: 24px"></i>
+    `;
 
     cartShopBox.innerHTML = cartBoxContent;
     cartContent.appendChild(cartShopBox);
@@ -191,24 +193,4 @@ function updatetotal() {
     // If Price contain some cents value
   }
   document.getElementsByClassName("total-price")[0].innerText = "$" + total;
-}
-// Get the search form and input element
-const searchForm = document.getElementById("search-form");
-const searchInput = document.getElementById("search-input");
-
-// Event listener for form submission
-searchForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent form submission
-  const searchTerm = searchInput.value;
-  searchProducts(searchTerm);
-});
-
-// Function to search for products (dummy implementation)
-function searchProducts(searchTerm) {
-  // Perform search logic
-  // You can replace this with your own search implementation
-  // Here, we'll simulate a search by redirecting to a separate page with the search term as a query parameter
-
-  // Redirect to the search results page with the search term as a query parameter
-  window.location.href = "search-results.html?search=" + searchTerm;
 }

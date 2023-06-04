@@ -12,9 +12,9 @@
     />
     <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/slider.css" />
-    <link rel="stylesheet" href="icart.css" />
+    <link rel="stylesheet" href="CSS/icart.css" />
     <!-- <link rel="stylesheet" href="Shop.css" /> -->
     <!-- bootstrap link  -->
     <link
@@ -41,10 +41,6 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <form id="search-form">
-            <input type="text" id="search-input" placeholder="Search..." />
-            <button type="submit">Search</button>
-          </form>
           <li>
             <!-- <a href="cart.html"> -->
             <i class="far fa-shopping-bag" id="cart-icon"> </i>
@@ -82,92 +78,112 @@
       <button onclick="getPreviousImage()" id="b2"><</button>
     </section>
 
-    <section id="feature" class="section-p1">
-      <div class="fe-box">
-        <img src="Images/features/f1.png" alt="features" />
-        <h6>Free Shipping</h6>
-      </div>
-      <div class="fe-box">
-        <img src="Images/features/f2.png" alt="features" />
-        <h6>Online Order</h6>
-      </div>
-      <div class="fe-box">
-        <img src="Images/features/f3.png" alt="features" />
-        <h6>Save Money</h6>
-      </div>
-      <div class="fe-box">
-        <img src="Images/features/f4.png" alt="features" />
-        <h6>Promotions</h6>
-      </div>
-      <div class="fe-box">
-        <img src="Images/features/f5.png" alt="features" />
-        <h6>Happy Sell</h6>
-      </div>
-      <div class="fe-box">
-        <img src="Images/features/f6.png" alt="features" />
-        <h6>24/7 Support</h6>
+    <section class="section-p1">
+      <h2 id="our_features">Our Features</h2>
+      <div id="feature">
+        <div class="fe-box">
+          <img src="Images/features/f1.png" alt="features" />
+          <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+          <img src="Images/features/f2.png" alt="features" />
+          <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+          <img src="Images/features/f3.png" alt="features" />
+          <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+          <img src="Images/features/f4.png" alt="features" />
+          <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+          <img src="Images/features/f5.png" alt="features" />
+          <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+          <img src="Images/features/f6.png" alt="features" />
+          <h6>24/7 Support</h6>
+        </div>
       </div>
     </section>
 
     <section class="shop container">
+      <h2 class="product-category">Our Products</h2>
       <button class="pre-btn"><</button>
       <button class="nxt-btn">></button>
       <div class="shop-content">
         <!-- Box-1 -->
         <div class="product-box">
-          <img src="cartImg/product1.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product1.jpg" alt="" class="product-img" />
           <h2 class="product-title">AEROREADY SHIRT</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$25</span>
-          <i class="fal fa-shopping-cart cart add-cart"></i>
+          <span class="actual-price">$50</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-2 -->
         <div class="product-box">
-          <img src="cartImg/product2.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product2.jpg" alt="" class="product-img" />
           <h2 class="product-title">WIRELESS EARBUDS</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$125</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$150</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-3 -->
         <div class="product-box">
-          <img src="cartImg/product3.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product4.jpg" alt="" class="product-img" />
           <h2 class="product-title">HOODED PARKA</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$35</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$70</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-4 -->
         <div class="product-box">
-          <img src="cartImg/product4.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product3.jpg" alt="" class="product-img" />
           <h2 class="product-title">STRAW METAL BOTTLE</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$15</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$30</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-5 -->
         <div class="product-box">
-          <img src="cartImg/product5.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product5.jpg" alt="" class="product-img" />
           <h2 class="product-title">SILVER METAL</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$225</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$250</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-6 -->
         <div class="product-box">
-          <img src="cartImg/product6.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product6.jpg" alt="" class="product-img" />
           <h2 class="product-title">BACK HAT</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$25</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$50</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-7 -->
         <div class="product-box">
-          <img src="cartImg/product7.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product7.jpg" alt="" class="product-img" />
           <h2 class="product-title">BACKPACK</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$45</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$50</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
         <!-- Box-8 -->
         <div class="product-box">
-          <img src="cartImg/product8.jpg" alt="" class="product-img" />
+          <img src="Images/cartImg/product8.jpg" alt="" class="product-img" />
           <h2 class="product-title">UL TRABOOST 22</h2>
+          <p class="product-short-des">a short line about the product..</p>
           <span class="price">$25</span>
-          <i class="fal fa-shopping-cart cart"></i>
+          <span class="actual-price">$50</span>
+          <button class="cart add-cart">Add to Cart</button>
         </div>
       </div>
     </section>
@@ -176,175 +192,78 @@
     <section id="bannar_Shotout" class="section-m1">
       <h4>Repair Services</h4>
       <h2>Up to <span>70% off </span>All t-Shirt & Accessories</h2>
-      <button class="button_Normal">Explore more</button>
     </section>
     <!-- Bigshotout section is End here -->
 
     <!-- New Arrival Section is start here -->
     <section id="product1" class="section-p1">
-      <h2>New Arrival</h2>
+      <h2 id="up_coming">UP-coming Products</h2>
       <p>Summer Collection New Modern Design</p>
       <div class="pro-container">
+        <div class="pro">
+          <img src="Images/products/f1.jpg" alt="products" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h4>$78 <span>expected-price</span></h4>
+          </div>
+        </div>
         <div class="pro">
           <img src="Images/products/n1.jpg" alt="products" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
+            <h4>$78 <span>expected-price</span></h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="Images/products/f2.jpg" alt="products" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h4>$78 <span>expected-price</span></h4>
+          </div>
         </div>
         <div class="pro">
           <img src="Images/products/n2.jpg" alt="products" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
+            <h4>$78 <span>expected-price</span></h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="Images/products/f3.jpg" alt="products" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h4>$78 <span>expected-price</span></h4>
+          </div>
         </div>
         <div class="pro">
           <img src="Images/products/n3.jpg" alt="products" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
+            <h4>$78 <span>expected-price</span></h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="Images/products/f4.jpg" alt="products" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h4>$78 <span>expected-price</span></h4>
+          </div>
         </div>
         <div class="pro">
           <img src="Images/products/n4.jpg" alt="products" />
           <div class="des">
             <span>adidas</span>
             <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
+            <h4>$78 <span>expected-price</span></h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="pro">
-          <img src="Images/products/n5.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="Images/products/n6.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="Images/products/n7.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-        <div class="pro">
-          <img src="Images/products/n8.jpg" alt="products" />
-          <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$78</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- start call to action Banner from here -->
-    <section class="section-p1" id="call_to_action_section">
-      <div class="bannerBox">
-        <h4>Crazy details</h4>
-        <h2>Buy 1 get 1</h2>
-        <span>The best classic dress is on the sale at crazy Store</span>
-        <button class="button_White">Learn More</button>
-      </div>
-      <div class="bannerBox" id="bannerBox2">
-        <h4>Spring & Summer</h4>
-        <h2>Up Comming Season</h2>
-        <span>The best classic dress is on the sale at crazy Store</span>
-        <button class="button_White">Collections</button>
-      </div>
-    </section>
-
-    <!-- Text Banner is start from here -->
-    <section id="bannerSection3" class="section-p1">
-      <div>
-        <h4>Crazy details</h4>
-        <p>Lorem ipsum dolor sit.</p>
-      </div>
-      <div id="textBanner2">
-        <h4>New FOOTWEAR Collection</h4>
-        <p>Summer & Spring 2023.</p>
-      </div>
-      <div id="textBanner3">
-        <h4>T-Shirt</h4>
-        <p>New Trending Prints.</p>
       </div>
     </section>
 
@@ -361,10 +280,6 @@
             <li><a href="#" class="footer-link">jeans</a></li>
             <li><a href="#" class="footer-link">trousers</a></li>
             <li><a href="#" class="footer-link">shoes</a></li>
-            <li><a href="#" class="footer-link">casuals</a></li>
-            <li><a href="#" class="footer-link">formals</a></li>
-            <li><a href="#" class="footer-link">sports</a></li>
-            <li><a href="#" class="footer-link">watch</a></li>
           </ul>
           <ul class="category">
             <li class="category-title">women</li>
@@ -374,27 +289,15 @@
             <li><a href="#" class="footer-link">jeans</a></li>
             <li><a href="#" class="footer-link">trousers</a></li>
             <li><a href="#" class="footer-link">shoes</a></li>
-            <li><a href="#" class="footer-link">casuals</a></li>
-            <li><a href="#" class="footer-link">formals</a></li>
-            <li><a href="#" class="footer-link">sports</a></li>
-            <li><a href="#" class="footer-link">watch</a></li>
           </ul>
         </div>
       </div>
-      <!-- // previous elements -->
       <p class="footer-title">about company</p>
       <p class="info">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
         tempore ad suscipit, eos eius quisquam sed optio nisi quaerat fugiat
         ratione et vero maxime praesentium, architecto minima reiciendis iste
         quo deserunt assumenda alias ducimus. Ullam odit maxime id voluptates
-        rerum tenetur corporis laboriosam! Cum error ipsum laborum tempore in
-        rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo
-        aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo
-        culpa reprehenderit excepturi distinctio tempore cupiditate praesentium
-        nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab
-        debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt
-        quasi placeat omnis, itaque harum?
       </p>
       <p class="info">
         support emails - help@clothing.com, customersupport@clothing.com
@@ -413,11 +316,10 @@
       </div>
       <p class="footer-credit">Clothing, Best apparels online store</p>
     </footer>
-    <script src="script.js"></script>
-    <script src="addtocart.js"></script>
+    <script src="js/responsive_script.js"></script>
     <script src="slider/slider.js"></script>
-    <script src="ishop.js"></script>
-    <script src="shop.js"></script>
+    <script src="js/ishop.js"></script>
+    <script src="js/shop.js"></script>
     <!-- bootstap link js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -25,6 +25,7 @@ sliderTimer = setInterval(function () {
   getNextImage();
 }, 3000);
 
+// slider for products
 const productContainers = [...document.querySelectorAll(".shop-content")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
 const preBtn = [...document.querySelectorAll(".pre-btn")];
