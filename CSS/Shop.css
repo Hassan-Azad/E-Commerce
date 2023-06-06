@@ -109,6 +109,11 @@ img {
   .cart {
     width: 320px;
   }
+  .footer-content .logo {
+    width: 35%;
+    margin-top: 40px;
+    margin-left: 0rem;
+}
 }
 @media (max-width: 360px) {
   .shop {
@@ -117,4 +122,5 @@ img {
   .cart {
     width: 280px;
   }
+
 }

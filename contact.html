@@ -7,6 +7,7 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="stylesheet" href="CSS/Contact_us.css" />
+    <link rel="stylesheet" href="CSS/icart.css" />
 
     <link
       rel="stylesheet"
@@ -31,7 +32,14 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  />
   <body>
     <section id="header">
       <a href="#"><img src="Images/logo1.png" alt="" id="logo" /></a>
@@ -41,6 +49,11 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li>
+            <!-- <a href="cart.html"> -->
+            <i class="far fa-shopping-bag" id="cart-icon"> </i>
+            <!-- </a> -->
+          </li>
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
       </div>
@@ -49,6 +62,21 @@
           <i class="far fa-shopping-bag"> </i>
         </a>
         <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <!-- cart -->
+      <div class="my-cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- content -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy button -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- cart close -->
+        <i id="bar" class="far fa-times close-cart"></i>
       </div>
     </section>
     <div class="contact_us_header">
@@ -102,28 +130,38 @@
     ></iframe>
 
     <div class="contact_form">
-      <h1>Get In Touch With Us</h1>
+      <h1>Get in Touch With Us</h1>
 
       <div class="container">
         <form id="contactForm" onsubmit="submitForm(event)">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Submit" />
-          </div>
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" />
+            </div>
+          </fieldset>
         </form>
       </div>
     </div>
+    <script src="js/responsive_script.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
       (function () {

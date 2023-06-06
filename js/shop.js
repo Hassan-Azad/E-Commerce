@@ -94,6 +94,7 @@ function addCartClicked(event) {
   addProductToCart(title, price, productImg);
   updatetotal();
   updateCartData(); // Update cart data in sessionStorage
+  // counter
   cartCount++;
   document.getElementById("cart-count").textContent = cartCount;
 }
